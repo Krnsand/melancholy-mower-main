@@ -1,0 +1,17 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+# Intro
+
+Let's create the basic landing page and a page where we can cahnge the settings
+
+# Files
+
+app/page.tsx - show a drop down with all settings. Below a Create New link. Below that a play-button (we'll come back to that).
+app/create/page.tsx & actions.ts  - show a name input field and a create button, redirect on create to...
+app/edit/[id]/page.tsx & actions.ts - get the settings id and render all fields. Update them onblur. At the bottom, have a back button taking you to the root.
+
+

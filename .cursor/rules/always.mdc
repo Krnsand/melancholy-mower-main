@@ -1,0 +1,34 @@
+---
+alwaysApply: true
+---
+
+# Intro
+
+Melancholy Mower is an art project. This repo is the brain of an old, retro-fitted auto mower.
+
+The audience should be able to speak to the mower to discover its backstory.
+
+# Stack
+
+- Typescript
+- React
+- NextJS 15.3.5 (src folder, app folder)
+- Supabase
+- Vercel
+- Elevenlabs for voice
+
+# Rules
+
+- Always think out loud first, create a to do list. Make sure the to dos are reasonable and ordered logically. When you feel satisfied with the todo go ahead and implement. Check off the to do list as you go. Make changes to it if necessary.
+- Use vanilla React (no need for fancy component libs)
+- Use Tailwind
+- No need to focus on design, this will all run on a phone hidden inside the artwork
+- Use supabase migration files. You MUST use the YYYYMMDDHHMMSS_descriptive_name.sql file name format
+- Use server side rendering (page.tsx)
+- Use server actions (actions.ts)
+- Always return an @ActionResponse from a server action
+- Always do redirects in server actions (outside try-catch as redirects throw an error)
+- Remember that code execution continues in the client component, make sure to handle a null/undefined result from the call to the server action
+- Only access database from server actions
+- Only create client component when we need user interaction
+- Don't use forms, use onclick or onblur and handlers that call server action functions

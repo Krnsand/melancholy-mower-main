@@ -1,0 +1,18 @@
+---
+description:
+globs:
+alwaysApply: false
+---
+
+# Intro
+We should add Elevenlabs voice agent to let our users talk to the mower. 
+
+# Random thoughts
+
+- Use context7 to understand how voice agents API for elevenlabs works.
+- We'll design one or more custom voices, so this id is needed somewhere in the settings.
+- Maybe we need to store the elevenlabs agent id, too? 
+
+# Outcome
+
+When I've created a setting and hit play, I should be able to start talking to the mower.
