@@ -64,6 +64,12 @@ export function EditForm({ settings }: { settings: Settings }) {
   useEffect(() => {
     const loadVoices = async () => {
       try {
+        // Test base settings route
+        console.log("Testing base settings route...");
+        const settingsTest = await fetch('/api/settings');
+        const settingsResult = await settingsTest.json();
+        console.log("Base settings route result:", settingsResult);
+
         // Test server execution first
         console.log("Testing server execution...");
         const testResponse = await fetch('/api/test');

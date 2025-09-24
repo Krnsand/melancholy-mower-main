@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from "next/server";
 import { updateSettings } from "@/db/settings";
 import { revalidatePath } from "next/cache";
 
+console.log("🚨 API ROUTE FILE LOADED: /api/settings/[id]/route.ts");
+
 export async function PATCH(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
